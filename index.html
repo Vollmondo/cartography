@@ -7,30 +7,12 @@
         <title>Map</title>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
         <div id="map" class="map" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px;"></div>
-        <script type="text/javascript">
-            // Работаем с leaflet. Документация: https://mourner.github.io/Leaflet/reference.html
-            
-            //Установка начальных координат (широта и долгата + зум)
-            var map = L.map('map').setView([55.15874249418191, 61.402664998934284], 18);
-            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-            
-            //Собираем стопку из дополнительных карт   
-            var layers = {
-            
-                OpenStreetMaps: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'),
-
-                Wikimapia: new L.tileLayer('http://{s}{hash}.wikimapia.org/?x={x}&y={y}&zoom={z}&r=7071412&type=&lng=1', {hash: function (data) {return data.x % 4 + (data.y % 4) *4;}, subdomains : 'i' , maxZoom: 20}),
-                
-            }
-
-            
-            //Добавляем собранную стопку на страницу в правом верхнем углу     
-            L.control.layers(layers).addTo(this.map);
-
-        </script>
+        <script type="text/javascript" src="map_init.js"></script>
     </body>
 </html>
 
