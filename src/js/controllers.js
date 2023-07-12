@@ -7,7 +7,7 @@ L.control.scale({
 
 //Маркер
 const basicBeachIcon = L.icon({
-    iconUrl: '../img/location-pin-svgrepo-com.svg',
+    iconUrl: 'src/img/location-pin-svgrepo-com.svg',
     iconSize: [40, 40],
 });
     
