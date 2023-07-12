@@ -85,7 +85,3 @@ var overlays = {
 //Добавляем собранную стопку на страницу в правом верхнем углу     
 L.control.layers(layers, overlays).addTo(this.map);
 
-//Добавляем контроллер для отображения масштаба карты
-L.control.scale({
-    position:'bottomleft'
-    }).addTo(map);
