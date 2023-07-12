@@ -28,6 +28,11 @@
             //Добавляем собранную стопку на страницу в правом верхнем углу     
             L.control.layers(layers).addTo(this.map);
 
+            //Добавляем контроллер для отображения масштаба карты
+            L.control.scale({
+                position:'bottomleft'
+                }).addTo(map);
+
         </script>
     </body>
 </html>
