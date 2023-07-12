@@ -1,7 +1,3 @@
-.map {
-    margin-top: 100px;
-}
-
 .leaflet-left{
     width: 100%;
 }
@@ -9,4 +5,8 @@
 .leaflet-bottom .leaflet-control-scale {
     margin-left: 50%;
     margin-bottom: 20px;
+}
+
+.map {
+    margin-top: 100px;
 }
