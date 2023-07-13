@@ -12,11 +12,9 @@
     </head>
     <body>
         <div class="header">
-			<div>
-                <div class="main_logo">	
-					<a href="index.html"><img src="src/img/1837413.svg" width="100px" height="100px"></a>
-				</div>
-            </div>
+            <div class="logo">	
+				<a href="index.html"><img id="main_logo" src="src/img/1837413.svg"></a>
+			</div>
             <div class="menu">
                 <div class="menu_first_row">
                     <div class="app_name">	
@@ -56,9 +54,16 @@
                 </div>
             </div>
 		</div>
-        <div id="map" class="map" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px;"></div>
-        <script type="text/javascript" src="src/js/map_init.js"></script>
-        <script type="text/javascript" src="src/js/controllers.js"></script>
+        <div class="content">
+            <div class="left-sidebar"></div>
+            <div id="map" class="map" style="position: absolute; top: 0px; bottom: 0px; left: 20%;">
+                <script type="text/javascript" src="src/js/map_init.js"></script>
+                <script type="text/javascript" src="src/js/controllers.js"></script>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&#169MyCartography</p>
+            <script>document.write("2023 - " + new Date().getFullYear())</script>
+        </div>
     </body>
 </html>
-
