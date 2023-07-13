@@ -33,13 +33,18 @@ a, a:link, a:visited, a:hover {
     text-align: center;
 }
 
+#search-submit{
+    background-image: url("../img/background1.jpg");
+    border-radius: 6px;
+}
+
 .logo{
     width: 20%;
     margin: 0;
 }
 
 #main_logo{
-    margin: 20px;
+    margin: 0 20px 20px 20px;
     width: 80%;
     height: 150px;
 }
@@ -60,9 +65,11 @@ a, a:link, a:visited, a:hover {
 	margin: 0;
 	display: block;
 	float: left;
-	padding: 0 30px 0 0;
+	padding: 0 30px;
+    justify-content: space-between;
+    border-right: 2px solid black;
 }
-
+  
 .header_submenu_link {
 	display: none;
 	margin: 0;
@@ -81,7 +88,8 @@ a, a:link, a:visited, a:hover {
 	position: absolute;
 	top: 20px;
 	z-index: 10000000000;
-    background-color: white;
+    background-image: url("../img/background1.jpg");
+    opacity: 0.8;
 }
 
 #header_menu_list{
@@ -115,11 +123,34 @@ a, a:link, a:visited, a:hover {
     min-height: 700px;
 }
 
+.sidebar_menu {
+	background: none;
+    font-family: Helvetica;
+    font-size: 18pt;
+	padding: 0 5px 5px 0;
+}
+
+.sidebar_menu_btn {
+	width: 90%;
+    height: 40px;
+    font-family: Helvetica;
+    font-size: 18pt;
+    text-align: left;
+    margin: 0 0 5px 20px;
+    padding: 5px;
+    border-radius: 0 6px 6px 0;
+    background-image: url("../img/background1.jpg");
+}
+
+.sidebar_menu_btn:hover{
+    opacity: 0.8;
+}
+
 .map {
     
     width: 80%;
-    border: 2px solid black;
-    border-radius: 10px 5px 5px 10px;
+    border: 2px solid #af9e64ee;
+    border-radius: 6px 6px 6px 6px;
 }
 
 .footer{
