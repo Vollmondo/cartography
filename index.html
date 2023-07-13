@@ -11,6 +11,51 @@
 
     </head>
     <body>
+        <div class="header">
+			<div>
+                <div class="main_logo">	
+					<a href="index.html"><img src="src/img/1837413.svg" width="100px" height="100px"></a>
+				</div>
+            </div>
+            <div class="menu">
+                <div class="menu_first_row">
+                    <div class="app_name">	
+                        <h1 id="header_h1">Картография</h1>
+                    </div>
+                    <div class="search_container">
+                        <div class="search_text">
+                            <input class="text search_input" name="q" value="" title="Search" placeholder="Искать&nbsp;здесь...">
+                        </div>
+                        <div class="search_button">
+                            <button id="search-submit" name="search-submit" type="submit">
+                                <img class="submit" src="src/img/search-button.png" alt="Search" width="20" height="20">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_second_row">
+                    <div id="header_menu_list">
+                        <li class="header_menu_link"><a href="index.html">Главная</a></li>
+                        <li class="header_menu_link">
+                            <a href="#" target="blank">Lorem ipsum
+                                <ul class="header_submenu_list">
+                                    <li class="header_submenu_link"><a href="#" target="blank">Lorem ipsum</a></li>
+                                    <li class="header_submenu_link"><a href="#" target="blank">Lorem ipsum</a></li>
+                                </ul>							
+                            </a>
+                        </li>
+                        <li class="header_menu_link">
+                            <a href="#">Lorem ipsum
+                                <ul class="header_submenu_list">
+                                    <li class="header_submenu_link"><a href="#">Lorem ipsum</a></li>
+                                    <li class="header_submenu_link"><a href="#">Lorem ipsum</a></li>
+                                </ul>		
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+		</div>
         <div id="map" class="map" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px;"></div>
         <script type="text/javascript" src="src/js/map_init.js"></script>
         <script type="text/javascript" src="src/js/controllers.js"></script>
