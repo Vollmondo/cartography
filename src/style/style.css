@@ -33,9 +33,20 @@ a, a:link, a:visited, a:hover {
     text-align: center;
 }
 
-#search-submit{
+.search_input{
+    height: 25px;
+    font-size: 10pt;
+}
+
+.text .search_input{
+    font-size: 10pt;
+}
+
+#search_submit{
     background-image: url("../img/background1.jpg");
     border-radius: 6px;
+    height: 32px;
+    width: 32px;
 }
 
 .logo{
