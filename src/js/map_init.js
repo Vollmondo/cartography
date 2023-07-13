@@ -37,7 +37,7 @@ var layers = {
     "Дорожный&nbspтрафик": L.tileLayer('https://{s}.google.com/vt/lyrs=m@221097413,traffic&x={x}&y={y}&z={z}', {
         maxZoom: 20, subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
         }),
-            
+            ddd
     /*нужен api_key, чтобы небыло бесячей надписи
     CycleMap: L.tileLayer('https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}{r}.png?', {
         maxZoom:20
