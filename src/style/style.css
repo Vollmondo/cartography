@@ -168,3 +168,53 @@ a, a:link, a:visited, a:hover {
     text-align: center;
     margin-bottom: 5px;
 }
+
+.weatherbutton{
+    display: none;
+}
+
+.weatherbuttonblock{
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+}
+
+weatherbutton{
+    display: block;
+}
+      
+.leaflet-bar.my-control.leaflet-control:hover .weatherbutton {
+    display: block;
+    width: 150px;
+    margin: 2px 0;
+    line-height:16px;
+}
+
+.leaflet-bar.my-control.leaflet-control:hover #weatherblockbutton {
+    display: none;
+}
+
+.leaflet-bar.my-control.leaflet-control{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#weather5DaysForecast {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    height: auto;
+    line-height: 16px;
+    width: 148px;
+    border: 1px solid #737373;
+    border-radius: 2px;
+    z-index: 10000;
+    background-color: buttonface;   
+}
+
+#weather5DaysForecast:hover {
+    background-color: #E6E6E6;
+    border-color: #666666;
+}
