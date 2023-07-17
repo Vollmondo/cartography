@@ -19,7 +19,7 @@ const marker1 = L.marker([55.158661, 61.402688], {icon: basicBeachIcon})
 L.Control.MyControl = L.Control.extend({
     onAdd: function(map) {
     var el = L.DomUtil.create('div', 'leaflet-bar my-control');
-    el.innerHTML = '<div><ul class="weatherbuttonblock"><button id="weatherblockbutton" type="button">Погода</button><li><button class="weatherbutton" id="weatherbutton" type="button">Текущая &nbsp;погода</button></li><li><button class="weatherbutton" id="weatherforecast" type="button">Прогноз&nbsp;погоды<br>на&nbsp;ближайшие&nbsp;3&nbsp;часа</button></li><li class="weatherbutton"><a href="#" id="weather5DaysForecast">Прогноз&nbsp;погоды<br>на&nbsp;5&nbsp;дней</a></li></ul></div>';
+    el.innerHTML = '<div><ul class="weatherbuttonblock"><button id="weatherblockbutton" type="button">Погода</button><li><button class="weatherbutton" id="weatherbutton" type="button">Текущая &nbsp;погода</button></li><li><button class="weatherbutton" id="weatherforecast" type="button">Прогноз&nbsp;погоды<br>на&nbsp;ближайшие&nbsp;3&nbsp;часа</button></li><li class="weatherbutton"><a href="src/pages/weatherForcast.html" id="weatherForecastLink">Подробнее&mldr;</a></li></ul></div>';
     return el;
     },
 });
