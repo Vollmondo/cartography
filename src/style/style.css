@@ -218,3 +218,11 @@ weatherbutton{
     background-color: #E6E6E6;
     border-color: #666666;
 }
+
+.content{
+    display: flex;
+}
+
+.weather_forecast_h1{
+    margin-top: 0;
+}
