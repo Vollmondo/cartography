@@ -43,15 +43,14 @@ async function setupBoard() {
     const board = await Dashboards.board('container', {
         dataPool: {
             connectors: [{
-                id: 'Chelyabinsk',
+                id: 'Range Selection',
                 type: 'CSV'
             }, {
                 id: 'Cities',
                 type: 'CSV',
                 options: {
                     csvURL: (
-                        'https://www.highcharts.com/samples/data/' +
-                        'climate-cities.csv'
+                        'https://api.open-meteo.com/v1/forecast?latitude=55.154&longitude=61.4291&hourly=temperature_2m,precipitation,surface_pressure,windspeed_10m&current_weather=true&windspeed_unit=ms&timezone=auto&format=csv'
                     )
                 }
             }]
@@ -739,7 +738,7 @@ async function setupBoard() {
             cell: 'selection-grid',
             type: 'DataGrid',
             connector: {
-                id: 'Chelyabinsk'
+                id: 'Range Selection'
             },
             sync: {
                 highlight: true
@@ -787,7 +786,7 @@ async function setupBoard() {
             cell: 'city-chart',
             type: 'Highcharts',
             connector: {
-                id: 'Chelyabinsk'
+                id: 'Range Selection'
             },
             columnAssignment: {
                 time: null,
@@ -952,7 +951,7 @@ async function updateBoard(board, city, column, scale, newData) {
             colorStopsDays :
             colorStopsTemperature
     );
-    const selectionTable = await dataPool.getConnectorTable('Chelyabinsk');
+    const selectionTable = await dataPool.getConnectorTable('Range Selection');
     const [
         timeRangeSelector,
         worldMap,

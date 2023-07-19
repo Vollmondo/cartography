@@ -601,7 +601,7 @@ console.log("hi")
         const symbolCode = nextHours && nextHours.summary.symbol_code;
         const to = node.data.next_1_hours ? x + 36e5 : x + 6 * 36e5;
         
-        if (to > pointStart + 68 * 36e5 ) {
+        if (to > pointStart + 120 * 36e5 ) {
             return;
         }
 

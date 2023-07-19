@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <title>Прогноз погоды</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/weather_style.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/windbarb.js"></script>
+    <script src="https://code.highcharts.com/modules/pattern-fill.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">	
+            <a href="../../index.html"><img id="main_logo" src="../img/1837413.svg"></a>
+        </div>
+        <div class="menu">
+            <div class="menu_first_row">
+                <div class="app_name">	
+                    <h1 id="header_h1">Картография</h1>
+                </div>
+                <div class="search_container">
+                    <div class="search_text">
+                        <input class="text search_input" name="q" value="" title="Search" placeholder="Искать&nbsp;здесь...">
+                    </div>
+                    <div class="search_button">
+                        <button id="search_submit" type="submit">
+                            <img class="submit" src="../img/search-button.png" alt="Search" width="20" height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_second_row">
+                <div id="header_menu_list">
+                    <li class="header_menu_link"><a href="../../index.html">Главная</a></li>
+                    <li class="header_menu_link">
+                        <a href="weatherForcast.html" target="blank">Прогноз&nbsp;погоды
+                            <ul class="header_submenu_list">
+                                <li class="header_submenu_link"><a href="weatherForcast3.html" target="blank">на&nbsp;3&nbsp;дня</a></li>
+                                <li class="header_submenu_link"><a href="weatherForcast5.html" target="blank">на&nbsp;5&nbsp;дней</a></li>
+                            </ul>							
+                        </a>
+                    </li>
+                    <li class="header_menu_link">
+                        <a href="#">Lorem ipsum
+                            <ul class="header_submenu_list">
+                                <li class="header_submenu_link"><a href="#">Lorem ipsum</a></li>
+                                <li class="header_submenu_link"><a href="#">Lorem ipsum</a></li>
+                            </ul>		
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left-sidebar">
+            <div class="sidebar_menu">
+                <button type="menu" class="sidebar_menu_btn">Главная</button>
+                <button type="menu" class="sidebar_menu_btn">Lorem ipsum</button>
+                <button type="menu" class="sidebar_menu_btn">Lorem ipsum</button>
+                <button type="menu" class="sidebar_menu_btn">Lorem ipsum</button>
+                <button type="menu" class="sidebar_menu_btn">Lorem ipsum</button>
+            </div>
+        </div>
+        <div id="weather_forecast_page" class="weather_forecast_page">
+            <H1 class="weather_forecast_h1">Прогноз погоды</H1>
+            <figure class="highcharts-figure">
+                <div id="container">
+                    <div id="loading">
+                        <i class="fa fa-spinner fa-spin"></i> Loading data from external source
+                    </div>
+                </div>
+            </figure>
+            <script src="../js/weatherForcast5.js"></script>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&#169MyCartography</p>
+        <script>document.write("2023 - " + new Date().getFullYear())</script>
+    </div>
+</body>
+</html>
