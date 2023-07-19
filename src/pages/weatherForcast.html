@@ -7,20 +7,10 @@
     <title>Прогноз погоды</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/weather_style.css">
-    <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/dashboards.css">
-    <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/datagrid.css">
-
-    <script src="https://code.highcharts.com/dashboards/dashboards.js"></script>
-    <script src="https://code.highcharts.com/dashboards/datagrid.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/highcharts-more.js"></script>
-    <script src="https://code.highcharts.com/maps/modules/map.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/stock.js"></script>
-    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
-    <script src="https://code.highcharts.com/modules/timeline.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <script src="https://code.highcharts.com/dashboards/modules/dashboards-plugin.js"></script>
-    <script src="https://code.highcharts.com/dashboards/modules/math-modifier.js"></script>
 </head>
 <body>
     <div class="header">
@@ -78,7 +68,9 @@
         </div>
         <div id="weather_forecast_page" class="weather_forecast_page">
             <H1 class="weather_forecast_h1">Прогноз погоды</H1>
-            <div id="container">Loading...</div>
+            <div id="container">Loading...
+                
+            </div>
             <script src="../js/weather_infographics.js"></script>
         </div>
     </div>
