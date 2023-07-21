@@ -333,7 +333,7 @@ Meteogram.prototype.getChartOptions = function () {
         },
 
         title: {
-            text: 'Прогноз&nbsp;погоды&nbsp;на&nbsp;ближайшие&nbsp;3&nbsp;дня',
+            text: ' ',
             align: 'left',
             style: {
                 whiteSpace: 'nowrap',

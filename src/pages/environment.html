@@ -7,13 +7,10 @@
     <title>Прогноз погоды</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/weather_style.css">
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/windbarb.js"></script>
-    <script src="https://code.highcharts.com/modules/pattern-fill.js"></script>
-    <script src="https://code.highcharts.com/modules/data.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -70,15 +67,10 @@
             </div>
         </div>
         <div id="weather_forecast_page" class="weather_forecast_page">
-            <H1 class="weather_forecast_h1">Прогноз&nbsp;погоды&nbsp;на&nbsp;ближайшие&nbsp;3&nbsp;дня</H1>
-            <figure class="highcharts-figure">
-                <div id="container">
-                    <div id="loading">
-                        <i class="fa fa-spinner fa-spin"></i> Loading data from external source
-                    </div>
-                </div>
-            </figure>
-            <script src="../js/weatherForcast3.js"></script>
+            <H1 class="weather_forecast_h1">Состояние&nbsp;окружающей&nbsp;среды</H1>
+            <div id="container">Loading...
+            </div>
+            <script src=""></script>
         </div>
     </div>
     <div class="footer">
